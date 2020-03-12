@@ -1,0 +1,24 @@
+body {
+  color: #67707F;
+  font-family: Avenir Next Cyr !important; }
+
+a {
+  color: #67707F; }
+
+.top-menu {
+  font-size: 14px;
+  line-height: 16px; }
+  .top-menu .nav-item {
+    margin-left: 40px; }
+    @media (max-width: 768px) {
+      .top-menu .nav-item {
+        font-size: 20px;
+        margin-left: 0px; } }
+
+.main-menu {
+  border: 1px solid black;
+  height: 80px;
+  display: flex;
+  align-items: center; }
+  .main-menu > * {
+    margin-right: 60px; }
