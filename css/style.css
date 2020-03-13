@@ -1,14 +1,53 @@
 body {
-  color: #67707F !important;
+  color: #67707F;
   font-family: Avenir Next Cyr !important;
-  font-size: 14px !important; }
-  body a {
-    color: #67707F !important; }
-  body li {
-    list-style-type: none !important; }
-  body ul {
-    margin: 0 !important;
-    padding: 0 !important; }
+  font-size: 14px; }
+
+a {
+  color: #67707F; }
+
+li {
+  list-style-type: none !important; }
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important; }
+
+.btn-link, .btn-link:hover {
+  background-color: #E65F76;
+  color: white;
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+
+.btn-link:hover {
+  background-color: #E24B64; }
+
+.input-field {
+  display: inline-block;
+  width: 350px;
+  height: 40px;
+  border: 1px solid lightgray;
+  padding: 0px 15px; }
 
 .top-container {
   border: 1px solid gray; }
@@ -80,10 +119,30 @@ body {
   .novelty-stack__item img {
     display: block; }
 
+.mailing {
+  height: 240px;
+  background: #EDF2F4;
+  border-top: 2px solid #75dab0;
+  border-bottom: 2px solid #75dab0; }
+  .mailing__outer {
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    font-size: 18px; }
+    .mailing__outer .mailing__inner {
+      max-width: 615px;
+      right: 0px;
+      top: 5%;
+      margin: 20px;
+      position: absolute; }
+      .mailing__outer .mailing__inner p {
+        font-size: 18px; }
+
 .seo {
   border-bottom: 1px solid #DFE3E8; }
   .seo .seo__container {
-    width: 730px;
+    max-width: 730px;
     margin: auto;
     line-height: 24px;
     padding: 90px 0; }

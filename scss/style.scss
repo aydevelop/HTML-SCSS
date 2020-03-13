@@ -1,20 +1,5 @@
-body{
-  color: #67707F !important;
-  font-family: Avenir Next Cyr !important;
-  font-size: 14px !important;
-  a{
-    color: #67707F !important;
-  }
 
-  li{
-    list-style-type: none !important;
-  }
-  ul{
-    margin:0 !important;
-    padding:0 !important;
-  }
-}
-
+@import "base.scss";
 
 .top-container{
   border: 1px solid gray;
@@ -125,10 +110,36 @@ body{
   }
 } 
 
+.mailing{
+  height: 240px;
+  background: #EDF2F4;
+  border-top: 2px solid #75dab0;
+  border-bottom: 2px solid #75dab0;
+
+  &__outer{
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    font-size: 18px;
+
+    .mailing__inner{
+      max-width: 615px;
+      right: 0px;
+      top: 5%;
+      margin: 20px;
+      position: absolute;
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 .seo{
   border-bottom: 1px solid #DFE3E8;
   .seo__container{
-    width: 730px;
+    max-width: 730px;
     margin: auto;
     line-height: 24px;
     padding: 90px 0;
