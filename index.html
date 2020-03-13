@@ -15,47 +15,129 @@
 </head>
 
 <body>
-  <nav id="main-nav" class="navbar navbar-expand-md navbar-light">
-    <div class="container">
-      <button class="navbar-toggler" 
-        data-toggle="collapse"
-        data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbarCollapse" class="collapse navbar-collapse top-menu">
-        <ul class="navbar-nav">
-          <li class="nav-item ml-0">
-            <a href="#home" class="nav-link">Распродажа</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">Стильный лук</a>
-          </li>
-          <li class="nav-item">
-            <a href="#authors" class="nav-link">Помощь</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <img class="d-none d-md-block" src="img/user.svg">
-          <li class="nav-item ml-0">            
-            <a href="#contact" class="nav-link">Войти / Регистрация</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <nav class="container d-flex p-0">
+    <ul class="top-navbar d-md-flex p-0">
+      <li class="top-nav__item">
+        <a href="#">Распродажа</a>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" >Стильный лук</a>
+      </li>
+    </ul>
+    <ul class="top-navbar d-md-flex p-0">
+      <li class="top-nav__item">
+        <a href="#">Помощь</a>
+      </li>
+      <li class="top-navitem">
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
+    <ul class="top-navbar top-navbar ml-auto align-items-center d-flex flex-row">
+        <img src="img/user.svg" class="pr-1">
+        <li class="top-nav-item mr-0">            
+          <a href="#" >Войти / Регистрация</a>
+        </li>
+    </ul>
   </nav> 
-  <div class="container">
-    <div class="row main-menu">
-      <div class="col">
-        <img src="img/hide.svg">
-        <a href="#">Мужчинам</a>
-        <a href="#">Женщинам</a>
+  <div class="hr"></div>
+
+  <!-- ------------------------------------------------------------------------------- -->
+
+  <section class="container">
+    <div class="row">
+      123
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------------------- -->
+
+
+  <div class="slider d-flex flex-column align-items-left justify-content-center">
+    <div class="m-5">
+      <div class="display-3">
+        Новая коллекция от Twin-Set
+      </div>
+      <p class="mt-5">
+        Лучше предложение этого лета только для вас. Успейте заказать новые свежие луки от мирового бренда.
+      </p>
+      <div class="mt-5">
+        <a href="#" class="btn btn-danger">
+          Узнать подробнее
+      </a>
       </div>
     </div>
   </div>
 
+  <div class="discount container">
+    <div class="row d-flex justify-content-around">
+      <div class="discount__block discount__block1 d-flex flex-column align-items-center justify-content-center">
+        <img src="img/discount2.svg" >
+        <div class="mb-5 discount__value">
+          Лучшай коллекция
+        </div>
+        <div class="mt-5">
+          SUMMER
+        </div>
+        <div class="display-3">
+          Обувь
+        </div>
+      </div>
+      <div class="discount__block discount__block1 d-flex flex-column align-items-center justify-content-center">
+        <img src="img/discount.svg" >
+        <div class="mb-5 discount__value">
+          Cкидка 17%
+        </div>
+        <div class="mt-5">
+          ОБУВЬ
+        </div>
+        <div class="display-3">
+          Обувь
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="novelty row mt-5 d-flex">
+      <div class="h1">
+        Новинки
+      </div>
+      <div class="ml-auto">
+        <a href="#">Смотреть все новинки</a>
+      </div>
+    </div>
+    <div class="row novelty-stack">
+      <div class="col-3">
+        <div class="novelty-stack__item">
+          <img src="img/novelty1.svg" >
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="novelty-stack__item">
+          <img src="img/novelty2.svg" >
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="novelty-stack__item">
+          <img src="img/novelty3.svg" >
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="novelty-stack__item">
+          <img src="img/novelty4.svg" >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="promocode">
+    <div class="promocode_item">
+      
+    </div>
+    <div class="promocode_item">
+      
+    </div>
+  </div>
 
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
