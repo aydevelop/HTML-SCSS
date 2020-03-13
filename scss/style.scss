@@ -125,6 +125,16 @@ body{
   }
 } 
 
+.seo{
+  border-bottom: 1px solid #DFE3E8;
+  .seo__container{
+    width: 730px;
+    margin: auto;
+    line-height: 24px;
+    padding: 90px 0;
+  }
+}
+
 .footer{
   height: 380px;
   margin: 20px 0px;
@@ -141,6 +151,10 @@ body{
     display: block;
   }
 
+  li a{
+    line-height: 30px;
+  }
+
   &__soc{
     margin-top: 20px;
     a{
@@ -150,9 +164,5 @@ body{
         padding-top: 10px;
       }
     }
-  }
-
-  @media (max-width: 1200px) {
-    line-height: 26px;
   }
 }

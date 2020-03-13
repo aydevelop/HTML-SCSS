@@ -80,6 +80,14 @@ body {
   .novelty-stack__item img {
     display: block; }
 
+.seo {
+  border-bottom: 1px solid #DFE3E8; }
+  .seo .seo__container {
+    width: 730px;
+    margin: auto;
+    line-height: 24px;
+    padding: 90px 0; }
+
 .footer {
   height: 380px;
   margin: 20px 0px; }
@@ -91,6 +99,8 @@ body {
     font-weight: bold;
     padding-top: 20px;
     display: block; }
+  .footer li a {
+    line-height: 30px; }
   .footer__soc {
     margin-top: 20px; }
     .footer__soc a {
@@ -98,6 +108,3 @@ body {
       .footer__soc a img {
         width: 20px;
         padding-top: 10px; }
-  @media (max-width: 1200px) {
-    .footer {
-      line-height: 26px; } }
