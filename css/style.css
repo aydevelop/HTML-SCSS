@@ -1,7 +1,8 @@
 body {
   color: #67707F;
   font-family: Avenir Next Cyr !important;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-x: hidden; }
 
 a {
   color: #67707F; }
@@ -119,14 +120,50 @@ label:focus,
   .novelty-stack__item img {
     display: block; }
 
+.sale__item {
+  height: 400px;
+  position: relative; }
+.sale__img {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-color: #edf2f4; }
+  .sale__img img {
+    max-width: 215;
+    max-height: 215; }
+.sale__name {
+  margin: 15px 0 15px 0;
+  line-height: 18px; }
+  .sale__name span {
+    color: black; }
+.sale__price {
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px; }
+  .sale__price span {
+    color: #67707F;
+    font-size: 16px;
+    text-decoration: line-through; }
+.sale__label {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  .sale__label img {
+    margin: 10px; }
+.sale .slick-prev:before, .sale .slick-next:before {
+  color: black !important; }
+
 .mailing {
   height: 240px;
   background: #EDF2F4;
   border-top: 2px solid #75dab0;
-  border-bottom: 2px solid #75dab0; }
+  border-bottom: 2px solid #75dab0;
+  margin-top: 110px; }
   .mailing__outer {
     background-image: url("../img/mail.svg");
     background-repeat: no-repeat;
+    background-position-y: bottom;
     position: relative;
     height: 100%;
     font-size: 18px; }
@@ -145,7 +182,7 @@ label:focus,
     max-width: 730px;
     margin: auto;
     line-height: 24px;
-    padding: 90px 0; }
+    padding: 60px 0 90px 0; }
 
 .footer {
   height: 380px;

@@ -97,28 +97,88 @@
   }
 }
 
-.novelty-stack{
+.novelty-stack{ 
   &__item{
     background-color: #edf2f4; 
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     img{
       display: block;
     }
   }
 } 
 
+// ----------------------------------------------------------
+
+
+.sale{
+  &__item{
+    height: 400px;
+    position: relative;
+  }
+
+  &__img{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #edf2f4;
+
+    img{
+      max-width: 215;
+      max-height: 215;
+    }
+  }
+
+  &__name{
+    margin: 15px 0 15px 0;
+    line-height: 18px;
+
+    span{
+      color: black;
+    }
+  }
+
+  &__price{
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0px;
+
+    span{
+      color: #67707F;
+      font-size: 16px;
+      text-decoration:line-through;
+    }
+  }
+
+  &__label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    img{
+      margin: 10px;
+    }
+  }
+
+  .slick-prev:before, .slick-next:before { 
+    color:black !important;
+  }
+}
+
 .mailing{
   height: 240px;
   background: #EDF2F4;
   border-top: 2px solid #75dab0;
   border-bottom: 2px solid #75dab0;
+  margin-top: 110px;
 
   &__outer{
     background-image: url("../img/mail.svg");
     background-repeat: no-repeat;
+    background-position-y: bottom;
     position: relative;
     height: 100%;
     font-size: 18px;
@@ -138,11 +198,12 @@
 
 .seo{
   border-bottom: 1px solid #DFE3E8;
+
   .seo__container{
     max-width: 730px;
     margin: auto;
     line-height: 24px;
-    padding: 90px 0;
+    padding: 60px 0 90px 0;
   }
 }
 
