@@ -93,13 +93,50 @@ label:focus,
     .slider .display-3 {
       font-size: 2.5rem; } }
 
+.head {
+  height: 600px;
+  border: 2px solid #75dab0;
+  background: url(../img/svg.svg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .head__item {
+    max-width: 635px;
+    margin-top: 70px; }
+    .head__item span {
+      font-size: 60px;
+      color: #2B2D42;
+      text-transform: uppercase; }
+    .head__item p {
+      font-size: 18px;
+      margin: 40px 0px; }
+    .head__item a, .head__item a:hover {
+      width: 242px; }
+    @media (max-width: 768px) {
+      .head__item {
+        margin-top: 40px; } }
+  .head .slick-prev:before, .head .slick-next:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: relative; }
+  .head .slick-prev:before {
+    background-image: url("../img/arrow_left.svg");
+    background-repeat: no-repeat;
+    right: 30px; }
+  .head .slick-next:before {
+    background-image: url("../img/arrow_right.svg");
+    background-repeat: no-repeat;
+    left: 30px; }
+
 .discount {
+  margin-top: -80px;
   color: #2B2D42; }
   .discount__inner {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 10px;
+    margin: 10px auto;
     max-width: 540px;
     min-height: 270px;
     background-position: left bottom;
