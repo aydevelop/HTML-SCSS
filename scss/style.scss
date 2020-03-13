@@ -113,8 +113,42 @@
 
 // ----------------------------------------------------------
 
+.coupons{
+  &__item{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #75dab0;
+    margin-top: 10px;
+
+    &--left{
+      background-image: url("../img/coupons1.svg");
+    }
+
+    &--right{
+      background-image: url("../img/coupons2.svg");
+    }
+  }
+
+  &__inner{
+    width: 330px;
+    margin: 50px 0 0 40px;
+
+    p{
+      font-size: 24px;
+      line-height: 36px;
+      color: #2B2D42;
+    }
+
+    .btn-link{
+      width: 220px;
+    }
+  }
+}
 
 .sale{
+  margin-top: 60px;
+
   &__item{
     height: 400px;
     position: relative;
@@ -165,6 +199,21 @@
 
   .slick-prev:before, .slick-next:before { 
     color:black !important;
+  }
+
+  &__title{
+    margin-bottom: 40px;
+    align-items: center;
+
+    span{
+      font-size: 36px;
+      line-height: 48px;
+    }
+    
+    a{
+      color:#E65F76;
+      margin-left: auto;
+    }
   }
 }
 
