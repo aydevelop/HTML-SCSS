@@ -61,59 +61,109 @@
   }
 }
 
-.discount{
-  &__block{
-    border: 2px solid green;
-    width: 500px;
-    margin-top: -50px;
-    height: 500px;
-    background-color: #edf2f4;
-    position: relative;
-    img{
-      position: absolute;
-      left: 0px;
-      bottom: 0px;
-    }
+// .discount{
+//   &__block{
+//     border: 2px solid green;
+//     width: 500px;
+//     margin-top: -50px;
+//     height: 500px;
+//     background-color: #edf2f4;
+//     position: relative;
+//     img{
+//       position: absolute;
+//       left: 0px;
+//       bottom: 0px;
+//     }
 
-    .discount__value{
-      border: 2px solid #E65F76;
-      padding: 10px 20px;
-    }
-  }
+//     .discount__value{
+//       border: 2px solid #E65F76;
+//       padding: 10px 20px;
+//     }
+//   }
   
-  // &__block1{
-  //   background: url(../img/discount.svg);
-  //   background-repeat: no-repeat;
-  // }
-  // &__block2{
-  //   background: url(../img/discount2.svg);
-  //   background-repeat: no-repeat;
-  // }
-}
+//   // &__block1{
+//   //   background: url(../img/discount.svg);
+//   //   background-repeat: no-repeat;
+//   // }
+//   // &__block2{
+//   //   background: url(../img/discount2.svg);
+//   //   background-repeat: no-repeat;
+//   // }
+// }
 
-.novelty{
-  a{
-    color:#E65F76;
-  }
-}
+// .novelty{
+//   a{
+//     color:#E65F76;
+//   }
+// }
 
-.novelty-stack{ 
-  &__item{
-    background-color: #edf2f4; 
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .novelty-stack{ 
+//   &__item{
+//     background-color: #edf2f4; 
+//     height: 350px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    img{
-      display: block;
-    }
-  }
-} 
+//     img{
+//       display: block;
+//     }
+//   }
+// } 
 
 // ----------------------------------------------------------
 
+.discount{
+  color: #2B2D42;
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    max-width: 540px;
+    min-height: 270px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #edf2f4;
+    border: 2px solid #75dab0;
+
+    &--left{
+      background-image: url("../img/discount2.svg");
+    }
+
+    &--right{
+      background-image: url("../img/discount1.svg");
+    }
+
+    span{
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+
+    p{
+      font-size: 18px;
+      line-height: 24px;
+      margin: 15px 0px 0px 0px;
+    }
+
+    a{
+      background-color: transparent;
+      color: #E65F76;
+      text-transform: uppercase;
+      border: 1px solid #E65F76;
+      font-weight: bold;
+    }
+
+    > div{
+      margin-right: 20px;
+    }
+  }
+}
+
 .coupons{
+  margin-top: 80px;
+
   &__item{
     height: 400px;
     background-size: cover;
@@ -222,7 +272,7 @@
   background: #EDF2F4;
   border-top: 2px solid #75dab0;
   border-bottom: 2px solid #75dab0;
-  margin-top: 110px;
+  margin-top: 80px;
 
   &__outer{
     background-image: url("../img/mail.svg");
