@@ -1,11 +1,20 @@
 body{
-  color: #67707F;
+  color: #67707F !important;
   font-family: Avenir Next Cyr !important;
+  font-size: 14px !important;
+  a{
+    color: #67707F !important;
+  }
+
+  li{
+    list-style-type: none !important;
+  }
+  ul{
+    margin:0 !important;
+    padding:0 !important;
+  }
 }
 
-a{
-  color: #67707F;
-}
 
 .top-container{
   border: 1px solid gray;
@@ -115,3 +124,35 @@ a{
     }
   }
 } 
+
+.footer{
+  height: 380px;
+  margin: 20px 0px;
+
+  .footer__bottom{
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top:20px ;
+    display: block;
+  }
+
+  &__soc{
+    margin-top: 20px;
+    a{
+      margin-right:20px;
+      img{
+        width: 20px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    line-height: 26px;
+  }
+}
