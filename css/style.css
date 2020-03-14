@@ -50,25 +50,70 @@ label:focus,
   border: 1px solid lightgray;
   padding: 0px 15px; }
 
+.top-container {
+  border-bottom: 1px solid #DFE3E8; }
+
+.top-navbar {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 0px;
+  min-height: 40px;
+  align-items: center; }
+  .top-navbar li {
+    list-style-type: none;
+    margin-right: 40px; }
+    .top-navbar li a {
+      padding-left: 0px; }
+    @media (max-width: 768px) {
+      .top-navbar li {
+        font-size: 16px;
+        margin: 10px; } }
+
 .menu {
   text-transform: uppercase;
   height: 80px;
   display: flex;
   align-items: center; }
-  .menu__left a {
-    margin: 0px 30px; }
-    @media (max-width: 1200px) {
-      .menu__left a {
-        margin: 0px 15px; } }
-    @media (max-width: 992px) {
-      .menu__left a {
-        display: block;
-        margin-top: 4px; } }
-  .menu__right img {
-    margin: 0 20px; }
-    @media (max-width: 992px) {
-      .menu__right img {
-        margin: 5px; } }
+  .menu__bage {
+    display: inline-block;
+    position: relative; }
+    .menu__bage span {
+      position: absolute;
+      top: -2px;
+      right: 2px;
+      background-color: #E65F76;
+      border-radius: 50%;
+      color: white;
+      font-size: 10px;
+      padding: 0px 5px;
+      font-weight: bold; }
+  .menu__left {
+    display: flex;
+    align-items: center;
+    justify-content: left; }
+    .menu__left a {
+      margin: 0px 30px; }
+      @media (max-width: 992px) {
+        .menu__left a {
+          margin: 0px 15px; } }
+    .menu__left > div {
+      display: inline-block; }
+      @media (max-width: 768px) {
+        .menu__left > div {
+          display: none; } }
+    .menu__left .fa-bars {
+      font-size: 22px;
+      margin-top: 2px; }
+    .menu__left a:hover .fa-bars {
+      color: #E65F76; }
+  .menu__right {
+    text-align: right;
+    padding-right: 0px; }
+    .menu__right img {
+      margin: 0 10px; }
+      @media (max-width: 992px) {
+        .menu__right img {
+          margin: 5px; } }
   .menu__right {
     justify-content: right; }
 

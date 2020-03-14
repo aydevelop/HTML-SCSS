@@ -17,116 +17,62 @@
 </head>
 
 <body>
-  <!-- <nav class="container d-flex p-0">
-    <ul class="top-navbar d-md-flex p-0">
-      <li class="top-nav__item">
-        <a href="#">Распродажа</a>
-      </li>
-      <li class="top-nav__item">
-        <a href="#" >Стильный лук</a>
-      </li>
-    </ul>
-    <ul class="top-navbar d-md-flex p-0">
-      <li class="top-nav__item">
-        <a href="#">Помощь</a>
-      </li>
-      <li class="top-navitem">
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-    <ul class="top-navbar top-navbar ml-auto align-items-center d-flex flex-row">
-        <img src="img/user.svg" class="pr-1">
-        <li class="top-nav-item mr-0">            
-          <a href="#" >Войти / Регистрация</a>
+  <div class="top-container">
+    <nav class="container d-flex p-0">
+      <ul class="top-navbar d-md-flex p-0">
+        <li class="top-nav__item">
+          <a href="#">Распродажа</a>
         </li>
-    </ul>
-  </nav> 
-  <div class="hr"></div>
-
-  <!-- ------------------------------------------------------------------------------- -->
-
-  <section class="container">
-    <div class="row">
-      ---
-    </div>
-  </section>
-
-  <!-- ------------------------------------------------------------------------------- -->
-
-
-  <!-- <div class="slider d-flex flex-column align-items-left justify-content-center">
-    <div class="m-5">
-      <div class="display-3">
-        Новая коллекция от Twin-Set
-      </div>
-      <p class="mt-5">
-        Лучше предложение этого лета только для вас. Успейте заказать новые свежие луки от мирового бренда.
-      </p>
-      <div class="mt-5">
-        <a href="#" class="btn btn-danger">
-          Узнать подробнее
-      </a>
-      </div>
-    </div>
+        <li class="top-nav__item">
+          <a href="#" >Стильный лук</a>
+        </li>
+      </ul>
+      <ul class="top-navbar d-md-flex p-0">
+        <li class="top-nav__item">
+          <a href="#">Помощь</a>
+        </li>
+        <li class="top-navitem">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="top-navbar ml-auto d-flex flex-row align-items-center">
+          <img src="img/user.svg" class="pr-1">
+          <li class="top-nav-item mr-2">            
+            <a href="#" >Войти / Регистрация</a>
+          </li>
+      </ul>
+    </nav>
   </div>
-
-  <div class="discount container">
-    <div class="row d-flex justify-content-around">
-      <div class="discount__block discount__block1 d-flex flex-column align-items-center justify-content-center">
-        <img src="img/discount2.svg" >
-        <div class="mb-5 discount__value">
-          Лучшай коллекция
-        </div>
-        <div class="mt-5">
-          SUMMER
-        </div>
-        <div class="display-3">
-          Обувь
-        </div>
-      </div>
-      <div class="discount__block discount__block1 d-flex flex-column align-items-center justify-content-center">
-        <img src="img/discount.svg" >
-        <div class="mb-5 discount__value">
-          Cкидка 17%
-        </div>
-        <div class="mt-5">
-          ОБУВЬ
-        </div>
-        <div class="display-3">
-          Обувь
-        </div>
-      </div>
-    </div>
-  </div>
--->
-
-
-<!-- ------------------------------------------------------------------------------- -->
-  <hr>
+   
 
   <section class="menu">
     <div class="container">
       <div class="row">
-        <div class="col-5 menu__left">
-          <a href="#">
-            <img src="img/menu.svg" alt="">
+        <div class="col-3 col-md-5 pl-0 menu__left">
+          <a class="ml-2 ml-md-0" href="#">
+            <i class="fa fa-bars"></i>
           </a>
-          <a href="#">Мужчинам</a>
-          <a href="#">Женщинам</a>
+          <div>
+            <a href="#">Мужчинам</a>
+            <a href="#">Женщинам</a>
+          </div>
         </div>
-        <div class="col-4">
+        <div class="col-5 col-md-4">
           <img src="img/logo.svg">
         </div>
-        <div class="col-3 menu__right">
-          <a class="" href="">
+        <div class="col-4 col-md-3 menu__right">
+          <a class="#" href="">
             <img src="img/search.svg" alt="">
           </a>
-          <a class="" href="">
+          <a class="#" href="">
             <img src="img/heart.svg" alt="">
           </a>
-          <a href="">
-            <img src="img/cart.svg" alt="">
-          </a>
+          <div class="menu__bage">
+            <span>1</span>
+            <a href="#">
+              <img src="img/cart.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -609,21 +555,20 @@
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
           }
         },
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
           }
         },
         {
           breakpoint: 576,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
           }
         }
       ]
