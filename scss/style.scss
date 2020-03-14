@@ -41,7 +41,7 @@
       position: absolute;
       top: -2px;
       right: 2px;
-      background-color: #E65F76;
+      background-color: $pink;
       border-radius: 50%;
       color: white;
       font-size: 10px;
@@ -76,7 +76,7 @@
     }
 
     a:hover .fa-bars{
-      color: #E65F76;
+      color: $pink;
     }
   }
 
@@ -100,11 +100,30 @@
 
 .head{
   height: 600px;
-  border: 2px solid #75dab0;
+  border: 2px solid $light-green;
   background: url(../img/bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  
+  position: relative;
+
+  .navigation{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    line-height: 30px !important;
+
+    &__title{
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top:20px ;
+      display: block;
+      font-size: 16px;
+    }
+  }
+
   &__item{
     max-width: 635px;
     margin-top: 70px;
@@ -174,8 +193,8 @@
     min-height: 270px;
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-color: #edf2f4;
-    border: 2px solid #75dab0;
+    background-color: $bg-green;
+    border: 2px solid $light-green;
 
     &--left{
       background-image: url("../img/discount2.svg");
@@ -198,9 +217,9 @@
 
     a{
       background-color: transparent;
-      color: #E65F76;
+      color: $pink;
       text-transform: uppercase;
-      border: 1px solid #E65F76;
+      border: 1px solid $pink;
       font-weight: bold;
     }
 
@@ -217,7 +236,7 @@
     height: 400px;
     background-size: cover;
     background-position: center;
-    border: 2px solid #75dab0;
+    border: 2px solid $light-green;
     margin-top: 10px;
 
     &--left{
@@ -257,7 +276,7 @@
     height: 300px;
     display: flex;
     justify-content: center;
-    background-color: #edf2f4;
+    background-color: $bg-green;
 
     img{
       max-width: 215;
@@ -310,7 +329,7 @@
     }
     
     a{
-      color:#E65F76;
+      color:$pink;
       margin-left: auto;
     }
   }
@@ -318,9 +337,9 @@
 
 .mailing{
   height: 240px;
-  background: #EDF2F4;
-  border-top: 2px solid #75dab0;
-  border-bottom: 2px solid #75dab0;
+  background: $bg-green;
+  border-top: 2px solid $light-green;
+  border-bottom: 2px solid $light-green;
   margin-top: 80px;
 
   &__outer{

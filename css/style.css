@@ -41,7 +41,7 @@ label:focus,
   justify-content: center; }
 
 .btn-link:hover {
-  background-color: #E24B64; }
+  background-color: #E65F76; }
 
 .input-field {
   display: inline-block;
@@ -122,7 +122,22 @@ label:focus,
   border: 2px solid #75dab0;
   background: url(../img/bg.svg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  .head .navigation {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    line-height: 30px !important; }
+    .head .navigation__title {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 20px;
+      display: block;
+      font-size: 16px; }
   .head__item {
     max-width: 635px;
     margin-top: 70px; }
@@ -262,7 +277,7 @@ label:focus,
 
 .mailing {
   height: 240px;
-  background: #EDF2F4;
+  background: #edf2f4;
   border-top: 2px solid #75dab0;
   border-bottom: 2px solid #75dab0;
   margin-top: 80px; }

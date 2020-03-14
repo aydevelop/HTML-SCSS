@@ -1,3 +1,7 @@
+$pink: #E65F76;
+$light-green: #75dab0;
+$bg-green: #edf2f4;
+
 body{
     color: #67707F;
     font-family: Avenir Next Cyr !important;
@@ -37,7 +41,7 @@ label:focus,
 }
  
 .btn-link{
-    background-color: #E65F76;
+    background-color: $pink;
     color:white;
     width: 140px;
     height: 40px;
@@ -49,7 +53,7 @@ label:focus,
 
 .btn-link:hover{
     @extend .btn-link;
-    background-color: #E24B64;
+    background-color: $pink;
 }
 
 .input-field{

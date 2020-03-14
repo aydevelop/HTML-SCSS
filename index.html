@@ -43,13 +43,14 @@
       </ul>
     </nav>
   </div>
-   
+
+<!-- ------------------------------------------------------------------------------- -->
 
   <section class="menu">
     <div class="container">
       <div class="row">
         <div class="col-3 col-md-5 pl-0 menu__left">
-          <a class="ml-2 ml-md-0" href="#">
+          <a class="menu-toggle ml-2 ml-md-0" href="#">
             <i class="fa fa-bars"></i>
           </a>
           <div>
@@ -61,7 +62,7 @@
           <img src="img/logo.svg">
         </div>
         <div class="col-4 col-md-3 menu__right">
-          <a class="#" href="">
+          <a class="link-search" class="#" href="">
             <img src="img/search.svg" alt="">
           </a>
           <a class="#" href="">
@@ -78,8 +79,67 @@
     </div>
   </section>
 
-  <section class="head">
-    <div class="container s-slider-top">
+<!-- ------------------------------------------------------------------------------- -->
+
+  <section class="head">  
+    <div class="navigation">
+      <div class="container">
+        <div class="row mt-3 mb-5">
+          <div class="col">
+            <nav>
+              <ul>
+                <span class="navigation__title">Женская одежда</span>
+                <li><a href="#">Платья</a></li>
+                <li><a href="#">Юбки</a></li>
+                <li><a href="#">Брюки</a></li>
+                <li><a href="#">Джинсы</a></li>
+                <li><a href="#">Шорты</a></li>
+                <li><a href="#">Блузки и рубашки</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <nav>
+              <ul>
+                <span class="navigation__title">Женская обувь</span>
+                <li><a href="#">Балетки</a></li>
+                <li><a href="#">Туфли</a></li>
+                <li><a href="#">Босоножки</a></li>
+                <li><a href="#">Пляжная обувь</a></li>
+                <li><a href="#">Кроссовки</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <nav>
+              <ul>
+                <span class="navigation__title">Сумки</span>
+                <li><a href="#">Кожаные сумки</a></li>
+                <li><a href="#">Текстильные сумки</a></li>
+                <li><a href="#">Большие сумки</a></li>
+                <li><a href="#">Маленькие сумки</a></li>
+                <li><a href="#">Спортивные сумки</a></li>
+                <li><a href="#">Летние сумки</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <nav>
+              <ul>
+                <span class="navigation__title">Аксессуары</span>
+                <li><a href="#">Головные уборы</a></li>
+                <li><a href="#">Перчатки Шарфы и платки</a></li>
+                <li><a href="#">Шарфы и платки</a></li>
+                <li><a href="#">Ремни</a></li>
+                <span class="navigation__title">Сумки</span>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container s-slider-top">      
       <div class="head__item">
         <span>Новая коллекция от Twin-Set</span>
         <p>Лучше предложение этого лета только для вас. Успейте заказать новые свежие луки от мирового бренда</p>
@@ -97,6 +157,8 @@
       </div>
     </div>
   </section>
+
+<!-- ------------------------------------------------------------------------------- -->
 
   <section class="discount">
     <div class="container">
@@ -122,6 +184,8 @@
       </div>
     </div>
   </section>
+
+<!-- ------------------------------------------------------------------------------- -->
 
   <section class="sale">
     <div class="container">
@@ -256,6 +320,8 @@
     </div>
   </section>
 
+<!-- ------------------------------------------------------------------------------- -->
+
   <section class="coupons">
     <div class="row">
       <div class="col">
@@ -280,6 +346,8 @@
       </div>
     </div>
   </section>
+
+<!-- ------------------------------------------------------------------------------- -->
   
   <section class="sale">
     <div class="container">
@@ -588,6 +656,14 @@
           }
         }]
     });
+
+    $('.menu-toggle').click(function() {
+      $(".navigation").slideToggle(300);
+    });
+
+    $('.link-search').click(function(){
+      alert('search');
+    })
 </script>
 </body>
 </html>
