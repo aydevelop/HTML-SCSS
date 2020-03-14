@@ -104,6 +104,34 @@
 <!-- ------------------------------------------------------------------------------- -->
   <hr>
 
+  <section class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 menu__left">
+          <a href="#">
+            <img src="img/menu.svg" alt="">
+          </a>
+          <a href="#">Мужчинам</a>
+          <a href="#">Женщинам</a>
+        </div>
+        <div class="col-4">
+          <img src="img/logo.svg">
+        </div>
+        <div class="col-3 menu__right">
+          <a class="" href="">
+            <img src="img/search.svg" alt="">
+          </a>
+          <a class="" href="">
+            <img src="img/heart.svg" alt="">
+          </a>
+          <a href="">
+            <img src="img/cart.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="head">
     <div class="container s-slider-top">
       <div class="head__item">
@@ -605,7 +633,15 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false
+        dots: false,
+        responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            dots: true,
+            arrows: false
+          }
+        }]
     });
 </script>
 </body>

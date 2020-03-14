@@ -50,53 +50,32 @@ label:focus,
   border: 1px solid lightgray;
   padding: 0px 15px; }
 
-.top-container {
-  border: 1px solid gray; }
-
-.top-navbar {
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 0px;
-  min-height: 40px;
-  align-items: center; }
-  .top-navbar li {
-    list-style-type: none;
-    margin-right: 40px; }
-    .top-navbar li a {
-      padding-left: 0px; }
-    @media (max-width: 768px) {
-      .top-navbar li {
-        font-size: 16px;
-        margin: 10px; } }
-
-.hr {
-  height: 2px;
-  border-bottom: 1px solid lightgray; }
-
-.main-menu {
+.menu {
+  text-transform: uppercase;
   height: 80px;
   display: flex;
   align-items: center; }
-  .main-menu__items > * {
-    margin-right: 60px; }
-  .main-menu a {
-    display: inline; }
-
-.slider {
-  height: 600px;
-  background: url(../img/svg.svg);
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .slider > div {
-    width: 600px; }
-  @media (max-width: 768px) {
-    .slider .display-3 {
-      font-size: 2.5rem; } }
+  .menu__left a {
+    margin: 0px 30px; }
+    @media (max-width: 1200px) {
+      .menu__left a {
+        margin: 0px 15px; } }
+    @media (max-width: 992px) {
+      .menu__left a {
+        display: block;
+        margin-top: 4px; } }
+  .menu__right img {
+    margin: 0 20px; }
+    @media (max-width: 992px) {
+      .menu__right img {
+        margin: 5px; } }
+  .menu__right {
+    justify-content: right; }
 
 .head {
   height: 600px;
   border: 2px solid #75dab0;
-  background: url(../img/svg.svg);
+  background: url(../img/bg.svg);
   background-repeat: no-repeat;
   background-size: cover; }
   .head__item {
@@ -109,11 +88,17 @@ label:focus,
     .head__item p {
       font-size: 18px;
       margin: 40px 0px; }
+      @media (max-width: 768px) {
+        .head__item p {
+          display: none; } }
     .head__item a, .head__item a:hover {
       width: 242px; }
-    @media (max-width: 768px) {
-      .head__item {
-        margin-top: 40px; } }
+      @media (max-width: 768px) {
+        .head__item a, .head__item a:hover {
+          margin: 30px; } }
+  .head .slick-dots li button:before {
+    font-size: 20px;
+    margin: 10px 0px; }
   .head .slick-prev:before, .head .slick-next:before {
     content: "";
     display: block;
@@ -127,7 +112,7 @@ label:focus,
   .head .slick-next:before {
     background-image: url("../img/arrow_right.svg");
     background-repeat: no-repeat;
-    left: 30px; }
+    left: 15px; }
 
 .discount {
   margin-top: -80px;
