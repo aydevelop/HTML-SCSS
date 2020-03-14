@@ -16,69 +16,96 @@
   <title>Bootstrap Theme</title>
 </head>
 
+<!-- ------------------------------------------------------------------------------- -->
+
 <body>
-  <div class="top-container">
-    <nav class="container d-flex p-0">
-      <ul class="top-navbar d-md-flex p-0">
-        <li class="top-nav__item">
-          <a href="#">Распродажа</a>
-        </li>
-        <li class="top-nav__item">
-          <a href="#" >Стильный лук</a>
-        </li>
-      </ul>
-      <ul class="top-navbar d-md-flex p-0">
-        <li class="top-nav__item">
-          <a href="#">Помощь</a>
-        </li>
-        <li class="top-navitem">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="top-navbar ml-auto d-flex flex-row align-items-center">
-          <img src="img/user.svg" class="pr-1">
-          <li class="top-nav-item mr-2">            
-            <a href="#" >Войти / Регистрация</a>
+  <header>
+    <div class="top-container">
+      <nav class="container d-flex p-0">
+        <ul class="top-navbar d-md-flex p-0">
+          <li class="top-nav__item">
+            <a href="#">Распродажа</a>
           </li>
-      </ul>
-    </nav>
-  </div>
+          <li class="top-nav__item">
+            <a href="#" >Стильный лук</a>
+          </li>
+        </ul>
+        <ul class="top-navbar d-md-flex p-0">
+          <li class="top-nav__item">
+            <a href="#">Помощь</a>
+          </li>
+          <li class="top-navitem">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="top-navbar ml-auto d-flex flex-row align-items-center">
+            <img src="img/user.svg" class="pr-1">
+            <li class="top-nav-item mr-2">            
+              <a href="#" >Войти / Регистрация</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+  <!-- ------------------------------------------------------------------------------- -->
+
+    <section class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-md-5 pl-0 menu__left">
+            <a class="menu-toggle ml-2 ml-md-0" href="#">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div>
+              <a href="#">Мужчинам</a>
+              <a href="#">Женщинам</a>
+            </div>
+          </div>
+          <div class="col-5 col-md-4">
+            <img src="img/logo.svg">
+          </div>
+          <div class="col-4 col-md-3 menu__right">
+            <a class="link-search" class="#" href="">
+              <img src="img/search.svg" alt="">
+            </a>
+            <a class="#" href="">
+              <img src="img/heart.svg" alt="">
+            </a>
+            <div class="menu__bage">
+              <span>1</span>
+              <a href="#">
+                <img src="img/cart.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 <!-- ------------------------------------------------------------------------------- -->
 
-  <section class="menu">
-    <div class="container">
-      <div class="row">
-        <div class="col-3 col-md-5 pl-0 menu__left">
-          <a class="menu-toggle ml-2 ml-md-0" href="#">
-            <i class="fa fa-bars"></i>
-          </a>
-          <div>
-            <a href="#">Мужчинам</a>
-            <a href="#">Женщинам</a>
+    <div class="ontop">
+      <div class="container">
+        <div class="search">
+          <div class="search__title">
+            <span>Что вы ищите?</span>
+            <a class="search__close" href="#">×</a>
           </div>
-        </div>
-        <div class="col-5 col-md-4">
-          <img src="img/logo.svg">
-        </div>
-        <div class="col-4 col-md-3 menu__right">
-          <a class="link-search" class="#" href="">
-            <img src="img/search.svg" alt="">
-          </a>
-          <a class="#" href="">
-            <img src="img/heart.svg" alt="">
-          </a>
-          <div class="menu__bage">
-            <span>1</span>
-            <a href="#">
-              <img src="img/cart.svg" alt="">
-            </a>
+          <div class="search__field">
+            <div class="search__input">
+              <input placeholder="Поиск ..." type="text">
+            </div>
+            <div>
+              <a class="search__do" href="#">
+                <img src="img/search_icon.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
+  </header>
 <!-- ------------------------------------------------------------------------------- -->
 
   <section class="head">  
@@ -607,6 +634,8 @@
     </div>
   </footer>
 
+  <div class="overlay"></div>
+
  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
  <script>
@@ -662,8 +691,18 @@
     });
 
     $('.link-search').click(function(){
-      alert('search');
+      $(".ontop").show();
+      $(".overlay").show();
+      return false;
     })
+
+    $('.search__close, .overlay').click(function(){
+      $(".ontop").hide();
+      $(".overlay").hide();
+    });
+
+    $('.search__do').click(function(){ alert('Search'); });
+
 </script>
 </body>
 </html>

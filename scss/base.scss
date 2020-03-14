@@ -39,7 +39,15 @@ label:focus,
     -webkit-appearance:none;
     box-shadow: none !important;
 }
- 
+
+input[type=text]:focus {
+    border: 0px;
+}
+
+input[type=text]:hover {
+    border: 0px;
+}
+
 .btn-link{
     background-color: $pink;
     color:white;
