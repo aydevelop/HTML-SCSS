@@ -160,10 +160,12 @@ header{
 .head{
   height: 600px;
   border: 2px solid $light-green;
-  background: url(../img/bg.svg);
+  background: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-position: center; 
+
 
   .navigation{
     display: none;
@@ -299,11 +301,11 @@ header{
     margin-top: 10px;
 
     &--left{
-      background-image: url("../img/coupons1.svg");
+      background-image: url("../img/coupons1.jpg");
     }
 
     &--right{
-      background-image: url("../img/coupons2.svg");
+      background-image: url("../img/coupons2.jpg");
     }
   }
 

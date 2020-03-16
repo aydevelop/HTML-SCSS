@@ -169,10 +169,11 @@ header {
 .head {
   height: 600px;
   border: 2px solid #75dab0;
-  background: url(../img/bg.svg);
+  background: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  background-position: center; }
   .head .navigation {
     display: none;
     position: absolute;
@@ -266,9 +267,9 @@ header {
     border: 2px solid #75dab0;
     margin-top: 10px; }
     .coupons__item--left {
-      background-image: url("../img/coupons1.svg"); }
+      background-image: url("../img/coupons1.jpg"); }
     .coupons__item--right {
-      background-image: url("../img/coupons2.svg"); }
+      background-image: url("../img/coupons2.jpg"); }
   .coupons__inner {
     width: 330px;
     margin: 50px 0 0 40px; }
